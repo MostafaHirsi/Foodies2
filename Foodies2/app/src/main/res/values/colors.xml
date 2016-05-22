@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#930702</color>
+    <color name="colorPrimaryDark">#930702</color>
+    <color name="windowBackground">#930702</color>
+    <color name="colorAccent">#930702</color>
+    <color name="accent_material_light">#cc0000</color>
+    <color name="eatery_gray">#3b0a0a0a</color>
+    <color name="white">#ffffff</color>
+    <color name="secondary_text_default_material_light">#8affffff</color>
+    <color name="foreground_material_light">#930702</color>
+    <color name="status_bar_color">#212121</color>
+    <color name="FF930702">#930702</color>
+    <color name="primary_text_default_material_light">#de000000</color>
+    <color name="secondary_text_color">#000000</color>
+</resources>

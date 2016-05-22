@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abstractcoders.mostafa.foodies.IntroActivity$PlaceholderFragment"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        tools:context="com.abstractcoders.mostafa.foodies.IntroActivity$PlaceholderFragment"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="550dp"
+            android:id="@+id/imageView7"
+            android:src="@drawable/mobile_banner" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="154dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="#ffffff"
+            android:id="@+id/relativeLayout3"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="77dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Swipe Right"
+                android:id="@+id/fragmentTitle"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textSize="13dp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:background="#55000000"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+        
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

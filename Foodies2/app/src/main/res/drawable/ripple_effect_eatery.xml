@@ -1,0 +1,9 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:color="#F6F6F6"
+    tools:targetApi="lollipop"> <!-- ripple color -->
+
+    <item android:drawable="@color/eatery_gray" /><!-- normal -->
+
+
+</ripple>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_eateries"
+            android:icon="@drawable/hamburger"
+            android:title="Eateries"/>
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/friendsicon"
+            android:title="Friends" />
+        <item
+            android:id="@+id/nav_notes"
+            android:icon="@drawable/paper"
+            android:title="Notes" />
+        <item
+            android:id="@+id/nav_photos"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Photos"/>
+        <item
+            android:id="@+id/nav_meetups"
+            android:icon="@drawable/usergroup"
+            android:title="Meet Ups" />
+
+    </group>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_account_settings"
+                android:icon="@drawable/settings"
+                android:title="Account" />
+            <item
+                android:id="@+id/nav_app_settings"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="App Settings" />
+        </menu>
+    </item>
+
+</menu>

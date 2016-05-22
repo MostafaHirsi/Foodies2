@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.abstractcoders.mostafa.foodies.IntroActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="531dp"
+            android:layout_height="725dp"
+            android:id="@+id/imageView9"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/banner_intro_new"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="100dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="161dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="#ffffff">
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="#55000000"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="158dp"/>
+
+<!--        <android.support.v4.view.ViewPager
+            android:id="@+id/container"
+            android:layout_width="230dp"
+            android:layout_height="550dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_centerHorizontal="true" />-->
+
+
+        <RelativeLayout
+            android:layout_width="230dp"
+            android:layout_height="550dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_centerHorizontal="true">
+
+             <android.support.v4.view.ViewPager
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/viewpager_main_activity"
+                 android:scrollIndicators="top">
+             </android.support.v4.view.ViewPager>
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/titles"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                app:radius="7dp"
+                app:fillColor="#930702"
+                app:strokeColor="#54000000"
+                android:backgroundTint="#FFFFFF" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Sign In"
+                android:id="@+id/loginBtn2"
+                android:paddingLeft="30dp"
+                android:layout_gravity="center_horizontal|right"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:textColor="#FFFFFF"
+                app:bootstrapBrand="success"
+                android:shadowColor="#FFFFFF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"/>
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Sign Up"
+                android:id="@+id/signUpBtn"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                app:bootstrapBrand="primary"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:textColor="#FFFFFF"
+                android:shadowColor="#FFFFFF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+<!--
+    android:layout_marginBottom="30dp"-->

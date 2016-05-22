@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.abstractcoders.mostafa.foodies.EateryActivity"
+    android:background="#9e9e9e">
+
+    <!--android:background="#83000000"-->
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/eateryScreen"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:id="@+id/eateryBanner"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/placeholder_restaurant" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/eateryTitle"
+                    android:layout_gravity="bottom|left"
+                    android:textSize="28dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginLeft="4dp"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/open_tag"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/open_sign"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:background="#3b0a0a0a"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:weightSum="1">
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Share"
+                        android:drawableLeft="@drawable/share"
+                        android:id="@+id/shareBtn"
+                        android:textColor="#FFFFFF"
+                        android:actionProviderClass="android.widget.ShareActionProvider"
+                        android:background="@drawable/ripple_effect_eatery"
+                        android:layout_weight="0.333" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Meet Up"
+                        android:drawableLeft="@drawable/meeting_btn"
+                        android:id="@+id/meetup_btn"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/ripple_effect_eatery"
+                        android:layout_weight="0.333" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Take Notes"
+                        android:drawableLeft="@drawable/paper_btn"
+                        android:id="@+id/notes_btn"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/ripple_effect_eatery"
+                        android:layout_weight="0.333" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/eatery_card_info"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:id="@+id/textView15"
+                    android:textSize="14dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="..."
+                    android:id="@+id/addressText"
+                    android:textSize="14dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="..."
+                    android:id="@+id/webAddressText"
+                    android:textSize="14dp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/eatery_card_info"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/photosLayout"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Photos"
+                    android:id="@+id/textView16"
+                    android:textSize="14dp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="10dp" />
+
+                <Gallery
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gallery"
+                    android:layout_gravity="center_horizontal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/eatery_card_info"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/opening_hours_layout"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Opening Hours"
+                    android:id="@+id/textView2"
+                    android:textSize="14dp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/eatery_card_info"
+                        android:layout_marginRight="5dp"
+                        android:paddingBottom="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/reviewLayout"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="0.84">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reviews"
+                            android:id="@+id/textView3"
+                            android:textSize="14dp"
+                            android:textColor="#000000"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp" />
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/scrollView2" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/reviewRelativeLayout"
+                                android:orientation="vertical"></LinearLayout>
+                        </ScrollView>
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/expanded_image"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="#b4000000"
+        android:visibility="gone" />
+
+</RelativeLayout>
+
+
+
